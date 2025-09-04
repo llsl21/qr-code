@@ -1,5 +1,5 @@
 :root {
-  --white: hsl(0, 0, 100%);
+  --white: hsl(0deg, 0%, 100%);
   --slate-300: hsl(212, 45%, 89%);
   --slate-500: hsl(216, 15%, 48%);
   --slate-900: hsl(218, 44%, 22%);
@@ -9,8 +9,22 @@
   --font-family: "Outfit", sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--font-family);
+  background-color: var(--slate-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 16px;
 }
 
 .qr-heading {
@@ -19,4 +33,32 @@ body {
 
 .qr-content {
   font-size: var(--font-size-paragraph);
+}
+
+.qr {
+  max-width: 320px;
+  width: 100%;
+  padding: 16px 16px 40px;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.qr-image-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+
+.qr-image-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.qr-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
