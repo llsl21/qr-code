@@ -33,6 +33,7 @@ body {
 
 .qr-content {
   font-size: var(--font-size-paragraph);
+  color: var(--slate-500);
 }
 
 .qr {
@@ -61,4 +62,5 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-inline: 16px;
 }
