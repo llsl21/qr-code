@@ -1,0 +1,22 @@
+:root {
+  --white: hsl(0, 0, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+
+  --font-size-heading: 22px;
+  --font-size-paragraph: 15px;
+  --font-family: "Outfit", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.qr-heading {
+  font-size: var(--font-size-heading);
+}
+
+.qr-content {
+  font-size: var(--font-size-paragraph);
+}
